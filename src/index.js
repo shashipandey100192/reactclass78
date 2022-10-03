@@ -1,24 +1,38 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 // import Myhome from './components/Home';
 // import Myabout from './components/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import 'font-awesome/css/font-awesome.css';
-// import Mynav from './components/Navbar';
-// import Myreactnav from './components/Navbar1';
-import { BrowserRouter as Abc } from 'react-router-dom';
-import Myroute from './components/Routes';
+import { BrowserRouter as Abc , Route, Routes } from 'react-router-dom';
+import './components/global.css';
+import Notfound from './components/Notfound';
 
+const Mylogin = lazy(()=> import('./components/Login'));
+const Mylandingpage = lazy(()=> import('./components/Landing'));
+const Mycontact = lazy(()=> import('./components/Contact'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Abc>
-  {/* <Myhome />
-  <Myabout />
-  <Mynav />
-  <Myreactnav /> */}
-  <Myroute />
+        <Routes>
+          <Route path='/' element={<Mylogin />} />
+          <Route path='/landing' element={
+            <Suspense fallback={<div className="mylodar">Welcome</div>}>
+            <Mylandingpage />
+          </Suspense>
+          } />
+          <Route path='/contact' element={
+            <Suspense fallback={<div className="mylodar">Welcome</div>}>
+            <Mycontact />
+          </Suspense>
+          } />
+          <Route path='*' element={<Notfound/>} />
+
+        </Routes>
+        
+
   </Abc>
 
   </React.StrictMode>
