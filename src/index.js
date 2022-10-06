@@ -8,6 +8,7 @@ import 'font-awesome/css/font-awesome.css';
 import { BrowserRouter as Abc , Route, Routes } from 'react-router-dom';
 import './components/global.css';
 import Notfound from './components/Notfound';
+import Featurs from './Featurs';
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
@@ -29,6 +30,7 @@ root.render(
           </Suspense>
           } />
           <Route path='*' element={<Notfound/>} />
+          <Route path='/feature' element={<Featurs/>} />
 
         </Routes>
         
