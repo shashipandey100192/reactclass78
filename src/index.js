@@ -14,6 +14,7 @@ const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
 const Mycontact = lazy(()=> import('./components/Contact'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const Mynew =lazy(()=>import('./components/Inputget'));
 root.render(
   <React.StrictMode>
     <Abc>
@@ -31,6 +32,7 @@ root.render(
           } />
           <Route path='*' element={<Notfound/>} />
           <Route path='/feature' element={<Featurs/>} />
+          <Route path='/new' element={<Mynew/>} />
 
         </Routes>
         
