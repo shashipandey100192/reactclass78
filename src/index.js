@@ -9,6 +9,7 @@ import { BrowserRouter as Abc , Route, Routes } from 'react-router-dom';
 import './components/global.css';
 import Notfound from './components/Notfound';
 import Featurs from './Featurs';
+import Mynewform from './Mynewform';
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
@@ -33,6 +34,7 @@ root.render(
           <Route path='*' element={<Notfound/>} />
           <Route path='/feature' element={<Featurs/>} />
           <Route path='/new' element={<Mynew/>} />
+          <Route path='/newform' element={<Mynewform/>} />
 
         </Routes>
         

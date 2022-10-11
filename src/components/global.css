@@ -44,3 +44,25 @@ background-color:gray;
     border:1px solid gray;
     margin-top:50px;
 }
+
+ol
+{
+    list-style-type: none;
+}
+ol input
+{
+    padding:5px;
+    margin:5px;
+}
+
+/* input:required
+{
+    border:1px solid red;
+} */
+input:valid{
+    border:1px solid green;
+}
+input:invalid{
+    border:1px solid red
+}
+
