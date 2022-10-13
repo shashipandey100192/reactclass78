@@ -10,6 +10,7 @@ import './components/global.css';
 import Notfound from './components/Notfound';
 import Featurs from './Featurs';
 import Mynewform from './Mynewform';
+import Myprops from './Myprops';
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
@@ -35,6 +36,7 @@ root.render(
           <Route path='/feature' element={<Featurs/>} />
           <Route path='/new' element={<Mynew/>} />
           <Route path='/newform' element={<Mynewform/>} />
+          <Route path='/myprops' element={<Myprops/>} />
 
         </Routes>
         
