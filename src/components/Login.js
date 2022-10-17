@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import Gallery from './Gallery';
 
 function Login() {
   return (
@@ -25,6 +26,7 @@ function Login() {
     <Link to="/landing"><button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button></Link>
     <p class="mt-5 mb-3 text-muted">© 2017–2021</p>
   </form>
+  <Gallery/>
 </main>
   )
 }

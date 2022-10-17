@@ -1,3 +1,6 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
+
 
 .nav
 {
@@ -64,5 +67,9 @@ input:valid{
 }
 input:invalid{
     border:1px solid red
+}
+
+.xyz{
+    border:5px solid red;
 }
 
