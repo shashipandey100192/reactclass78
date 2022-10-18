@@ -13,6 +13,8 @@ import Mynewform from './Mynewform';
 import Myprops from './Myprops';
 import Gallery from './components/Gallery';
 import List from './List';
+import City from './components/City';
+import Condi from './components/Condi';
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
@@ -41,6 +43,8 @@ root.render(
           <Route path='/myprops' element={<Myprops/>} />
           <Route path='/gallery' element={<Gallery/>} />
           <Route path='/loop' element={<List/>} />
+          <Route path='/city' element={<City/>} />
+          <Route path='/cond' element={<Condi/>} />
         </Routes>
         
 
