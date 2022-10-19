@@ -15,6 +15,7 @@ import Gallery from './components/Gallery';
 import List from './List';
 import City from './components/City';
 import Condi from './components/Condi';
+import Mycard from './components/Mycard';
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
@@ -45,6 +46,7 @@ root.render(
           <Route path='/loop' element={<List/>} />
           <Route path='/city' element={<City/>} />
           <Route path='/cond' element={<Condi/>} />
+          <Route path='/card' element={<Mycard/>} />
         </Routes>
         
 
