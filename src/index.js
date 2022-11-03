@@ -17,6 +17,7 @@ import City from './components/City';
 import Condi from './components/Condi';
 import Mycard from './components/Mycard';
 import Mydatafatch from './Mydatafatch';
+import Pagina from './Pagina';
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
@@ -49,6 +50,7 @@ root.render(
           <Route path='/cond' element={<Condi/>} />
           <Route path='/card' element={<Mycard/>} />
           <Route path='/mydata' element={<Mydatafatch />} />
+          <Route path='/pagi' element={<Pagina />} />
         </Routes>
         
 
