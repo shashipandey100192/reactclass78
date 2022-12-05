@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import './style.css';
+
 
 function Mycontact()
 {
@@ -14,8 +16,11 @@ const xyz = ()=>
 
 return(
     <>
+    <div className="mybg">
+
         <h1>contact page {first}</h1>
         <input type={inputtext} value={first} onClick={xyz} />
+        </div>
     </>
 )
 

@@ -18,17 +18,27 @@ import Condi from './components/Condi';
 import Mycard from './components/Mycard';
 import Mydatafatch from './Mydatafatch';
 import Pagina from './Pagina';
+import Welcome from './Welcome';
+import Mytraval from './Traval/Mytraval';
+import Landing from './Education/Landing';
+
+// import Myproduct from './redux/Product';
+
 
 const Mylogin = lazy(()=> import('./components/Login'));
 const Mylandingpage = lazy(()=> import('./components/Landing'));
 const Mycontact = lazy(()=> import('./components/Contact'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const Mynew =lazy(()=>import('./components/Inputget'));
+
+
+
 root.render(
   <React.StrictMode>
+ 
     <Abc>
         <Routes>
-          <Route path='/' element={<Mylogin />} />
+          <Route path='/' element={<Welcome/>} />
           <Route path='/landing' element={
             <Suspense fallback={<div className="mylodar">Welcome</div>}>
             <Mylandingpage />
@@ -51,6 +61,10 @@ root.render(
           <Route path='/card' element={<Mycard/>} />
           <Route path='/mydata' element={<Mydatafatch />} />
           <Route path='/pagi' element={<Pagina />} />
+          {/* <Route path='/redux' element={<Myproduct />} /> */}
+          <Route path='/traval' element={<Mytraval />} />
+          <Route path='/education' element={<Landing/>} />
+          
         </Routes>
         
 
