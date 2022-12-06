@@ -2,3 +2,26 @@
 {
     background-image: url('../../public/image/notfound.jpg');
 }
+
+.cus-nav
+{
+    margin-left:10px;
+}
+
+
+.divrot
+{
+    width:200px;
+    height:200px;
+    background-color:orange;
+    border:5px solid red;   
+    animation:abcd 2s infinite alternate;
+
+}
+
+
+@keyframes abcd {
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}   
+    
+}

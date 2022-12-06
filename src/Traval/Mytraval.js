@@ -1,8 +1,14 @@
 import React from 'react'
+import Navs from './Navs'
 
 function Mytraval() {
   return (
-    <div>Mytraval</div>
+    <div>
+      <Navs />
+
+
+
+    </div>
   )
 }
 
