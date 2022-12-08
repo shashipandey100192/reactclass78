@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mycustraval, Mytravalcustom } from './Mytravalnesting';
+import { Mycustraval, Mymemo, Mytravalcustom } from './Mytravalnesting';
 
 
 function Mytravallandingpage() {
@@ -10,6 +10,7 @@ function Mytravallandingpage() {
            
         </h1>
         <Mycustraval />
+        <Mymemo />
     </div>
   )
 }

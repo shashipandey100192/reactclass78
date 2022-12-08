@@ -62,7 +62,7 @@ root.render(
           <Route path='/mydata' element={<Mydatafatch />} />
           <Route path='/pagi' element={<Pagina />} />
           {/* <Route path='/redux' element={<Myproduct />} /> */}
-          <Route path='/traval' element={<Mytraval />} />
+          <Route path='/traval/*' element={<Mytraval />} />
           <Route path='/education' element={<Landing/>} />
           
         </Routes>
