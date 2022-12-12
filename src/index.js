@@ -21,6 +21,7 @@ import Pagina from './Pagina';
 import Welcome from './Welcome';
 import Mytraval from './Traval/Mytraval';
 import Landing from './Education/Landing';
+import Mysalesproject from './sales/Mysalesproject';
 
 // import Myproduct from './redux/Product';
 
@@ -64,6 +65,7 @@ root.render(
           {/* <Route path='/redux' element={<Myproduct />} /> */}
           <Route path='/traval/*' element={<Mytraval />} />
           <Route path='/education' element={<Landing/>} />
+          <Route path='/sales' element={<Mysalesproject/>} />
           
         </Routes>
         
