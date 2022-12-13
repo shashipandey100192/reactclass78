@@ -22,6 +22,7 @@ import Welcome from './Welcome';
 import Mytraval from './Traval/Mytraval';
 import Landing from './Education/Landing';
 import Mysalesproject from './sales/Mysalesproject';
+import { Auth0Provider } from '@auth0/auth0-react';
 
 // import Myproduct from './redux/Product';
 
@@ -31,12 +32,17 @@ const Mylandingpage = lazy(()=> import('./components/Landing'));
 const Mycontact = lazy(()=> import('./components/Contact'));
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const Mynew =lazy(()=>import('./components/Inputget'));
-
+const domain = process.env.REACT_APP_AUTH0_DOMAIN;
+const clientid = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 
 root.render(
   <React.StrictMode>
- 
+ <Auth0Provider
+ domain={domain}
+ clientId={clientid}
+ redirectUri={window.location.origin}
+ >
     <Abc>
         <Routes>
           <Route path='/' element={<Welcome/>} />
@@ -68,10 +74,8 @@ root.render(
           <Route path='/sales' element={<Mysalesproject/>} />
           
         </Routes>
-        
-
   </Abc>
-
+  </Auth0Provider>
   </React.StrictMode>
 );
 

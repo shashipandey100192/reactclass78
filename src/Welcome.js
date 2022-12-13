@@ -1,9 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Mylogin from './Mylogin'
 
 function Welcome() {
   return (
     <div className='container'>
+        <div className='row'>
+            <div className='col-12'>
+        <Mylogin />
+
+
+            </div>
+        </div>
         <div className='row'>
             <div className='col-lg-3'>
     <Link to="traval">
